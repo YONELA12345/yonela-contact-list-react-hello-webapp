@@ -1,3 +1,124 @@
-/* 
-    General Styles
-*/
+/* Fondo de la página */
+body {
+    background-image: url('https://png.pngtree.com/background/20230403/original/pngtree-starry-sky-ray-purple-picture-image_2273440.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden; /* Evita el scroll de la página completa */
+}
+
+/* Contenedor principal */
+.agenda-container {
+    max-width: 600px;
+    margin: 50px auto 0 auto; /* Centrar y darle un margen superior */
+    padding: 20px;
+    background-color: rgba(247, 247, 247, 0.95); /* Fondo ligeramente transparente */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-height: 80vh; /* Limita la altura del contenedor principal */
+    overflow-y: hidden; /* Evita el scroll del contenedor principal */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Lista de contactos con scroll */
+.agenda-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto; /* Permitir el scroll vertical */
+    max-height: 60vh; /* Limitar la altura de la lista */
+    margin-bottom: 20px;
+}
+
+/* Cada ítem de la lista de agendas */
+.agenda-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos */
+.agenda-title, .existing-agendas-title {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #4b0082;
+}
+
+/* Estilos del botón circular con el ícono del ojo */
+.view-details-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    background-color: #4b0082;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Hace que el botón sea un círculo */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.view-details-link:hover {
+    background-color: #800080;
+    transform: scale(1.1); /* Aumenta el tamaño del botón en hover */
+}
+
+.view-details-link i {
+    font-size: 18px;
+    color: white;
+}
+
+.view-details-link:hover i {
+    font-size: 20px; /* Aumenta ligeramente el tamaño del ícono al hacer hover */
+}
+
+/* Botón general */
+.custom-button {
+    background-color: #800080;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+    background-color: #5a005a;
+}
+/* Estilo para el input con solo borde inferior */
+.agenda-input {
+    width: 100%; /* Asegura que el input ocupe todo el ancho del contenedor */
+    padding: 10px;
+    font-size: 16px;
+    border: none; /* Elimina los bordes laterales y superiores */
+    border-bottom: 2px solid #4b0082; /* Solo borde inferior morado */
+    background-color: transparent; /* Fondo transparente */
+    transition: border-color 0.3s ease; /* Transición suave en focus */
+    outline: none; /* Elimina el borde azul por defecto en navegadores */
+}
+
+.agenda-input:focus {
+    border-bottom: 2px solid #800080; /* Cambia a morado oscuro al hacer focus */
+    box-shadow: 0 1px 0 rgba(128, 0, 128, 0.5); /* Ligero resplandor morado en focus */
+}
+
+
+
+/* Mensaje de error */
+.error-message {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}

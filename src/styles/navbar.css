@@ -1,0 +1,55 @@
+/* navbar.css */
+.navbar {
+    background-color: transparent !important; 
+    box-shadow: none !important; 
+    border: none; 
+}
+
+.navbar-light .navbar-brand {
+    color: white !important; 
+    font-weight: bold;
+    text-decoration: none; 
+}
+
+.navbar-light .navbar-brand:hover {
+    color: #f0f0f0 !important; 
+}
+
+.navbar-light a {
+    text-decoration: none !important; 
+    color: white !important;
+}
+
+.navbar-light a:hover {
+    color: #f0f0f0 !important;
+}
+
+/* custom */
+.custom-navbar {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.custom-navbar .navbar-brand {
+    color: white !important;
+    font-weight: bold;
+    text-decoration: none !important;
+    margin-left: 20px;
+}
+
+.custom-navbar .navbar-brand:hover {
+    color: #f0f0f0 !important;
+}
+
+.custom-navbar a {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+.custom-navbar a:hover {
+    color: inherit !important;
+}
+
+
+
